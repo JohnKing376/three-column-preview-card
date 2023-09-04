@@ -28,10 +28,9 @@ body {
 .container {
     display: flex;
     overflow: hidden;
-    max-width: 925px;
+    width: 925px;
     height: 500px;
     border-radius: 10px;
-    /* justify-content: space-between; */
 }
 
 .card1 {
@@ -60,6 +59,8 @@ body {
     font-family: 'Big Shoulders Display', cursive;
     color: var(--cn-neutral);
     padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
 }
 
 .card p {
