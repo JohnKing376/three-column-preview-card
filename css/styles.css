@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root {
+    --cp-orange: hsl(31, 77%, 52%);
+    --cp-dark-cyan: hsl(184, 100%, 22%);
+    --cp-dark-cyan-300: hsl(179, 100%, 13%);
+    --cn-neutral: #fff;
+    --cn-100: hsla(0, 0%, 100%, 0.75);
+    --cn-gray: hsl(0, 0%, 95%);
+
+
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    max-width: 925px;
+    height: 500px;
+    border-radius: 10px;
+    /* justify-content: space-between; */
+}
+
+.card1 {
+    background-color: var(--cp-orange);
+}
+
+.card2 {
+    background-color: var(--cp-dark-cyan);
+}
+
+.card3 {
+    background-color: var(--cp-dark-cyan-300);
+}
+
+.card {
+    align-items: center;
+    line-height: 1.5;
+    padding: 3rem;
+}
+
+.card > img {
+    padding-bottom: 1.5rem;
+}
+
+.card > h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--cn-neutral);
+    padding-bottom: 2rem;
+}
+
+.card p {
+    font-size: 15px;
+    color: var(--cn-100);
+    padding-bottom: 5rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn {
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px 35px;
+    outline: none;
+    border: 2px solid var(--cn-neutral);
+    border-radius: 100vmax;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn1 {
+    color: var(--cp-orange);
+    transition: all 300ms ease-in-out;
+}
+
+.btn2 {
+    color: var(--cp-dark-cyan);
+    transition: all 300ms ease-in-out;
+}
+
+.btn3 {
+    color: var(--cp-dark-cyan-300);
+    transition: all 300ms ease-in-out;
+}
+
+.btn1:hover, :focus-visible {
+    background-color: var(--cp-orange);
+    border: 2px solid var(--cn-100);
+    color: var(--cn-100);
+}
+.btn2:hover, :focus-visible {
+    background-color: var(--cp-dark-cyan);
+    border: 2px solid var(--cn-100);
+    color: var(--cn-100);
+}
+.btn3:hover, :focus-visible {
+    background-color: var(--cp-dark-cyan-300);
+    border: 2px solid var(--cn-100);
+    color: var(--cn-100);
+}
+
+@media (max-width: 50em) {
+    body {
+        padding: 1em;
+        height: 70svh;
+    }
+
+   .container {
+    flex-direction: column;
+    overflow: visible;
+   }
+   .card p { 
+    width: 100%;
+    padding-bottom: 2em;
+   }
+
+   .card1 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+
+   .card3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   }
+}
